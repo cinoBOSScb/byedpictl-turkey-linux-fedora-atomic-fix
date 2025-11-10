@@ -13,7 +13,7 @@ if command -v pacman &> /dev/null; then
   fi
 
 if command -v dnf &> /dev/null; then
-    paketyonetici="dnf install"
+    paketyonetici="rpm-ostree install"
     distro="fedora tabanli"
   fi
 
@@ -332,8 +332,6 @@ paket-yonetici-tanimla
 ubuntu-check
 profil-sec
 profil-uygula
-dnscrypt-check
-zenity-check
 dns-none
 resolv-conf
 dnscrypt-config

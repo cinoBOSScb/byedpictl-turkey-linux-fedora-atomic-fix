@@ -74,8 +74,8 @@ cmd_install () {
     fi
 
     printf "${C_BOLD}- Installing the desktop integration${C_RESET}\n"
-    xdg-desktop-menu install --novendor "$SRC_XDG/byedpictl.desktop"
-    xdg-icon-resource install --novendor --size 128 "$SRC_ICON/128/byedpictl.png"
+    # xdg-desktop-menu install --novendor "$SRC_XDG/byedpictl.desktop"
+    # xdg-icon-resource install --novendor --size 128 "$SRC_ICON/128/byedpictl.png"
 
     printf "${C_GREEN}Installation complete${C_RESET}\n"
     cat <<EOF
@@ -98,8 +98,8 @@ cmd_remove () {
     rm -f "$BIN/ciadpi"
     rm -f "$BIN/hev-socks5-tunnel"
     id -u byedpi &>/dev/null && userdel byedpi
-    xdg-desktop-menu uninstall "$SRC_XDG/byedpictl.desktop"
-    xdg-icon-resource uninstall --size 128 "$SRC_ICON/128/byedpictl.png"
+    # xdg-desktop-menu uninstall "$SRC_XDG/byedpictl.desktop"
+    # xdg-icon-resource uninstall --size 128 "$SRC_ICON/128/byedpictl.png"
 
     printf "${C_GREEN}Done${C_RESET}\n"
 }
