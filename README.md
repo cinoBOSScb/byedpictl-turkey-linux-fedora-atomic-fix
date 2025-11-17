@@ -10,14 +10,7 @@
 ---
 
 ## 🚀 Kurulum
-GitHub üzerinden repo'yu uygun konuma klonlayın.
-```bash
-curl -fsSL https://raw.githubusercontent.com/cinoBOSScb/byedpictl-turkey-linux-fedora-atomic-fix/refs/heads/master/curl.sh | bash
-```
-Klasörün İçine girin
-```bash
-cd ~/.local/share/byedpi-turkey-linux-fedora-atomic-fix
-```
+GitHub üzerinden repo'yu uygun konuma zip olarak indirin ve ayıklayın
 Gerekli Paketlerin Yüklenmesi
 ```bash
 sudo rpm-ostree install dnscrypt-proxy
@@ -27,11 +20,7 @@ Makineyi yeniden başlatın (ostree paketlerinin kurulması için)
 ```bash
 sudo reboot
 ```
-Makine yeniden başladıktan sonra klasörün içine tekrar girin
-```bash
-cd ~/.local/share/byedpi-turkey-linux-fedora-atomic-fix
-```
-Kurulum.sh dosyasını çalıştırın
+Makine yeniden başladıktan sonra klasörün içine girin ve Kurulum.sh dosyasını çalıştırın
 ```bash
 ./kurulum.sh
 ```
@@ -41,7 +30,6 @@ Kurulum bittikten sonra son olarak bu komutu girin
 ```bash
 sudo systemctl enable byedpi-start
 ```
-
 ---
 
 ## 🖥️ Kullanım
