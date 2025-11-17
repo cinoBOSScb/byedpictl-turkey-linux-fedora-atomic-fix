@@ -5,6 +5,7 @@
 |--------------|--------------------------------|
 |Fedora Kinoite| Çalışıyor ✅                   |
 |    Bazzite   | Çalışıyor ✅                   |
+|    Aurora   | Çalışıyor ✅                   |
 
 ---
 
