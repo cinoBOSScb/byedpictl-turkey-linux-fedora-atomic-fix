@@ -16,7 +16,7 @@ curl -fsSL https://raw.githubusercontent.com/cinoBOSScb/byedpictl-turkey-linux-f
 ```
 Klasörün İçine girin
 ```bash
-cd ~/.local/share/byedpi-turkey
+cd ~/.local/share/byedpi-turkey-linux-fedora-atomic-fix
 ```
 Gerekli Paketlerin Yüklenmesi
 ```bash
@@ -29,7 +29,7 @@ sudo reboot
 ```
 Makine yeniden başladıktan sonra klasörün içine tekrar girin
 ```bash
-cd ~/.local/share/byedpi-turkey
+cd ~/.local/share/byedpi-turkey-linux-fedora-atomic-fix
 ```
 Kurulum.sh dosyasını çalıştırın
 ```bash
