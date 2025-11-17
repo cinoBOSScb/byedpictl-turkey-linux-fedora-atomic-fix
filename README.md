@@ -12,7 +12,7 @@
 ## 🚀 Kurulum
 GitHub üzerinden repo'yu uygun konuma klonlayın.
 ```bash
-curl -fsSL https://raw.githubusercontent.com/elrondforwin/byedpi-turkey/refs/heads/master/curl.sh | bash
+curl -fsSL https://raw.githubusercontent.com/cinoBOSScb/byedpictl-turkey-linux-fedora-atomic-fix/refs/heads/master/curl.sh | bash
 ```
 Klasörün İçine girin
 ```bash
