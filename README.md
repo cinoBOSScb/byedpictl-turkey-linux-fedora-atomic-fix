@@ -1,48 +1,42 @@
 # byedpictl-turkey-fedora-atomic-fix
 
-### 🐧 **Test Edilen Ortamlar**  
+###  **Tested Environments**  
 | Ortam       | Durum                          |
 |--------------|--------------------------------|
-|Fedora Kinoite| Çalışıyor ✅                   |
-|    Bazzite   | Çalışıyor ✅                   |
-|    Aurora   | Çalışıyor ✅                   |
+|Fedora Kinoite| Works ✅                   |
+|    Bazzite   | Works ✅                   |
+|    Aurora   | Works ✅                   |
 
 ---
 
 ## 🚀 Kurulum
-GitHub üzerinden repo'yu uygun konuma zip olarak indirin ve ayıklayın
-Gerekli Paketlerin Yüklenmesi
+Download the zip and extract it to anywhere you want
+Install depencies
 ```bash
 sudo rpm-ostree install dnscrypt-proxy
 sudo rpm-ostree install zenity
 ```
-Makineyi yeniden başlatın (ostree paketlerinin kurulması için)
+Restart so rpm-ostree can install
 ```bash
 sudo reboot
 ```
-Makine yeniden başladıktan sonra klasörün içine girin ve Kurulum.sh dosyasını çalıştırın
+After reboot go to the folder you extracted and run
 ```bash
-./kurulum.sh
-```
-tespit edilen dağıtım fedora mı denince evet yazıp enter'a tıklayın ve kurulum sihirbazını izleyin
-
-Kurulum bittikten sonra son olarak bu komutu girin
-```bash
-sudo systemctl enable byedpi-start
+./setup.sh
 ```
 ---
 
-## 🖥️ Kullanım
+## Usage
 
-`byedpictl` komutlarının tamamını kullanabilirsiniz:
+`byedpictl` is the command to utilize the service.
 
 ```bash
 byedpictl help
 byedpictl tun start
 byedpictl tun stop
 byedpictl tun restart
-byedpictl tun change [profil-ismi] # profil değiştirir
+byedpictl tun change (profile name here)
 byedpictl tun status
 
-byedpictl zenity   # grafik arayüzü açar
+byedpictl zenity  #Opens GUI, might not work in some Atomic Desktop forks
 ```
